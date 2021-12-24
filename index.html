@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="./src/main.js"></script>
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+
+  <main class="main">
+
+    <div class="container">
+
+      <div class="main__header">
+        <h1 class="title">Simple, traffic-based pricing</h1>
+        <div class="subtitle">
+          <p>Sign-up for our 30-day trial. <span>No credit card required.</span></p>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <form action="#" method="post" class="form">
+
+          <div class="form__input">
+
+            <div class="pageviews">
+              <p><span class="pageviews__val" id="views"> </span> Pageviews</p>
+            </div>
+
+            <div class="range">
+              <input id="range" type="range" name="pageviews" step="25">
+            </div>
+
+            <div class="price">
+              <span class="price__val" id="price"></span><span style="align-self: center;"> / month</span>
+            </div>
+
+          </div>
+
+          <div class="billing">
+
+            <div class="billing__check">
+              <label for="yearly">Monthly Billing</label>
+              <label class="switch">
+                <input id="billing" type="checkbox" name="billing">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="discount">
+              <p>Yearly Billing <span class="discount__percent" id="discount">-25%</span></p>
+            </div>
+
+          </div>
+
+          <div class="cta">
+            <div class="bonus">
+              <ul class="bonus__list">
+                <li class="bonus__item">Unlimited websites</li>
+                <li class="bonus__item">100% data ownership</li>
+                <li class="bonus__item">Email reports</li>
+              </ul>
+            </div>
+
+            <div class="button">
+              <input type="submit" value="Start my trial" class="submit">
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">AchrefFast</a>.
+  </div> -->
+</body>
+
+</html>
