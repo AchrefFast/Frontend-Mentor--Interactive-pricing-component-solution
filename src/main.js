@@ -30,20 +30,20 @@ const convertToViewPrice = (currentVal, checked) => {
     let prices = [8, 12, 16, 24, 36];
     if (checked) {
         switch (currentVal) {
-            case '0': return { view: '10K', price: '$' + prices[0] * 0.75 }
-            case '25': return { view: '50K', price: '$' + prices[1] * 0.75 }
-            case '50': return { view: '100K', price: '$' + prices[2] * 0.75 }
-            case '75': return { view: '500K', price: '$' + prices[3] * 0.75 }
-            case '100': return { view: '1M', price: '$' + prices[4] * 0.75 }
+            case '0': return { view: '10K', price: '$' + prices[0] * 0.75 + '.00 ' }
+            case '25': return { view: '50K', price: '$' + prices[1] * 0.75 + '.00 ' }
+            case '50': return { view: '100K', price: '$' + prices[2] * 0.75 + '.00 ' }
+            case '75': return { view: '500K', price: '$' + prices[3] * 0.75 + '.00 ' }
+            case '100': return { view: '1M', price: '$' + prices[4] * 0.75 + '.00 ' }
             default: return { error: 'Something went wrong..!!!' }
         }
     } else {
         switch (currentVal) {
-            case '0': return { view: '10K', price: '$' + prices[0] }
-            case '25': return { view: '50K', price: '$' + prices[1] }
-            case '50': return { view: '100K', price: '$' + prices[2] }
-            case '75': return { view: '500K', price: '$' + prices[3] }
-            case '100': return { view: '1M', price: '$' + prices[4] }
+            case '0': return { view: '10K', price: '$' + prices[0] + '.00' }
+            case '25': return { view: '50K', price: '$' + prices[1] + '.00 ' }
+            case '50': return { view: '100K', price: '$' + prices[2] + '.00 ' }
+            case '75': return { view: '500K', price: '$' + prices[3] + '.00' }
+            case '100': return { view: '1M', price: '$' + prices[4] + '.00 ' }
             default: return { error: 'Something went wrong..!!!' }
         }
     }
